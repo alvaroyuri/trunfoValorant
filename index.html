@@ -1,0 +1,93 @@
+<html>
+    <script src="cod.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <head>
+        <title>Trunfo Valorant</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="page-title">Trunfo Valorant</h1>
+
+            <div class="container2">
+                <div class="placar">
+                    <div class="resultado">
+                        <h2 class="titulo">Cartas</h2>
+                        <h2 id="scorePlayer">PLAYER - 0</h2>
+                        <h2 id="scorePc">PC - 0</h2>
+                    </div>
+                </div>
+                <div class="colmeio">
+                    <div class="buttons">
+                        <button onclick="btnPull()" id="btn-Puxar">
+                            PUXAR
+                        </button>
+                        <button onclick="selectCard()" id="selecionarCarta">
+                            SELECIONAR
+                        </button>
+                        <button
+                            class="button-jogar"
+                            type="button"
+                            id="btnJogar"
+                            onclick="play()"
+                            disabled="false"
+                        >
+                            JOGAR
+                        </button>
+                    </div>
+                    <form>
+                        <div class="wrapper">
+                            <div>
+                                <div id="carta-jogador" class="cartas">
+                                    <img
+                                        id="carta"
+                                        src="http://m.gettywallpapers.com/wp-content/uploads/2022/02/Valorant-Mobile-Wallpaper-4k.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div id="carta-maquina" class="cartas">
+                                    <img
+                                        id="carta"
+                                        src="http://m.gettywallpapers.com/wp-content/uploads/2022/02/Valorant-Mobile-Wallpaper-4k.jpg"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="resultado"></div>
+                </div>
+                <form>
+                    <div class="wrapper2">
+                        <div>
+                            <div id="hand0">
+                                <img
+                                    id="deck0"
+                                    src="http://m.gettywallpapers.com/wp-content/uploads/2022/02/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div id="hand1">
+                                <img
+                                    id="deck1"
+                                    src="http://m.gettywallpapers.com/wp-content/uploads/2022/02/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div id="hand2">
+                                <img
+                                    id="deck2"
+                                    src="http://m.gettywallpapers.com/wp-content/uploads/2022/02/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- <div id="resultado"></div> -->
+        </div>
+    </body>
+</html>

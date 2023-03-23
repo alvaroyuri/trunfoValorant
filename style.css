@@ -1,0 +1,315 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 854px;
+    background-image: url("https://preview.redd.it/p2x1aylaup551.png?width=1920&format=png&auto=webp&s=6008a3dab9aef0e0eaec44752fa480576b670738");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+.wrapper {
+    display: flex;
+
+    margin-top: 20px;
+
+    width: 600px;
+    height: 350px;
+
+    justify-content: space-between;
+
+    padding: 80px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    min-width: 210px;
+    min-height: 870px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.colmeio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.page-title {
+    color: transparent;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 500px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    margin: 1em 1em;
+    padding: 0.5em 1.7em;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    background-color: rgb(80, 10, 172);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button:disabled {
+    opacity: 0.5; /* reduz a opacidade do botão */
+    cursor: not-allowed; /* muda o cursor para um ícone de não permitido */
+    /* adiciona outras propriedades CSS conforme necessário */
+}
+
+button:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.deck4 {
+    width: 255px;
+    height: 360px;
+    overflow: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 325px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 60px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(4, 0, 8, 0.42);
+    border: 6px solid rgb(255, 255, 255);
+}
+
+#carta {
+    width: 255px;
+    height: 360px;
+    overflow: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(4, 0, 8, 0.42);
+    border: 6px solid rgb(255, 255, 255);
+}
+
+#deck0,
+#deck1,
+#deck2 {
+    width: 191px;
+    height: 270px;
+    overflow: auto;
+    margin: 2px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(4, 0, 8, 0.42);
+    border: 6px solid rgb(255, 255, 255);
+}
+
+#carta-jogador,
+#carta-maquina {
+    background-size: 240px 155px;
+    background-repeat: no-repeat;
+    background-position-x: 09px;
+    background-position-y: 23px;
+    border-radius: 15px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 12;
+}
+
+#carta-jogador p,
+#carta-maquina p.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 165px;
+    left: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#carta-jogador div {
+    position: absolute;
+    top: 180px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(7, 0, 0);
+    z-index: 2;
+    text-align: left;
+    margin: 1rem;
+}
+
+#carta-jogador input {
+    margin: 100px 40px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#carta-maquina div#opcoes {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(7, 0, 0);
+    z-index: 2;
+    text-align: left;
+    margin: 1rem;
+}
+
+#carta-maquina p.lista {
+    margin: 100px 40px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.carta-status {
+    position: absolute;
+    top: 120px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(7, 0, 0);
+    z-index: 2;
+    text-align: left;
+    margin: 1rem;
+}
+
+.carta-status input {
+    margin: 15px 15px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+.placar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.placar .titulo {
+    color: rgb(0, 0, 0);
+    text-decoration: underline overline;
+}
+
+.placar h2 {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 120px;
+    left: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hand0,
+#hand1,
+#hand2 {
+    background-size: 173px 123px;
+    background-repeat: no-repeat;
+    background-position-x: 16px;
+    background-position-y: 17px;
+    border-radius: 15px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 12;
+}
+
+#hand0 img,
+#hand1 img,
+#hand2 img {
+    width: 191px;
+    height: 270px;
+    overflow: auto;
+    margin: 2px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(4, 0, 8, 0.42);
+    border: 6px solid rgb(255, 255, 255);
+}
+
+.win {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(42, 245, 76, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.lower {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(245, 42, 42, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.draw {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+}
