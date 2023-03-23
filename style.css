@@ -252,7 +252,7 @@ button:hover {
 .carta-subtitle {
     z-index: 2;
     position: absolute;
-    top: 115px;
+    top: 105px;
     left: 18px;
     font-weight: 800;
     text-transform: uppercase;
