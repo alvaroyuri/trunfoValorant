@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Trunfo Valorant</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    
+
+    <head>
+        <title>Trunfo Valorant</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="page-title">Trunfo Valorant</h1>
+
+            <div class="container2">
+                <div class="placar">
+                    <div class="resultado">
+                        <h2 class="titulo">Cartas</h2>
+                        <h2 id="scorePlayer">PLAYER - 0</h2>
+                        <h2 id="scorePc">PC - 0</h2>
+                    </div>
+                </div>
+                <div class="colmeio">
+                    <div class="buttons">
+                        <button onclick="btnPull()" id="btn-Puxar">
+                            PUXAR
+                        </button>
+                        <button onclick="selectCard()" id="selecionarCarta">
+                            SELECIONAR
+                        </button>
+                        <button
+                            class="button-jogar"
+                            type="button"
+                            id="btnJogar"
+                            onclick="play()"
+                            disabled="false"
+                        >
+                            JOGAR
+                        </button>
+                    </div>
+                    <form>
+                        <div class="wrapper">
+                            <div>
+                                <div id="carta-jogador" class="cartas">
+                                    <img
+                                        id="carta"
+                                        src="https://i.ibb.co/SPK85n9/Valorant-Mobile-Wallpaper-4k.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div id="carta-maquina" class="cartas">
+                                    <img
+                                        id="carta"
+                                        src='https://i.ibb.co/SPK85n9/Valorant-Mobile-Wallpaper-4k.jpg'
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="resultado"></div>
+                </div>
+                <form>
+                    <div class="wrapper2">
+                        <div>
+                            <div id="hand0">
+                                <img
+                                    id="deck0"
+                                    src="https://i.ibb.co/SPK85n9/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div id="hand1">
+                                <img
+                                    id="deck1"
+                                    src="https://i.ibb.co/SPK85n9/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div id="hand2">
+                                <img
+                                    id="deck2"
+                                    src="https://i.ibb.co/SPK85n9/Valorant-Mobile-Wallpaper-4k.jpg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- <div id="resultado"></div> -->
+        </div>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
